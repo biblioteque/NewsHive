@@ -1,0 +1,116 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "one-var": 0,
+        "react/prop-types": 0,
+        "one-var-declaration-per-line": 0,
+        "new-cap": 0,
+        "consistent-return": 0,
+        "eol-last": "error",
+        "no-empty": "error",
+        "import/newline-after-import": "error",
+        "max-len": [
+            "error",
+            {
+                "code": 100
+            }
+        ],
+        "no-irregular-whitespace": "error",
+        "prefer-const": "error",
+        "arrow-parens": [
+            "error",
+            "as-needed"
+        ],
+        "no-param-reassign": 0,
+        "comma-dangle": 0,
+        "curly": [
+            "error",
+            "multi-line"
+        ],
+        "no-console": "warn",
+        "no-unused-vars": "warn",
+        "no-shadow": [
+            "error",
+            {
+                "allow": [
+                    "req",
+                    "res",
+                    "err"
+                ]
+            }
+        ],
+        "object-curly-newline": [
+            "error",
+            {
+                "multiline": true
+            }
+        ],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "quotes": [
+            2,
+            "double"
+        ],
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "react/jsx-indent": "off",
+        "no-tabs": [
+            "error",
+            {
+                "allowIndentationTabs": true
+            }
+        ],
+        "no-use-before-define": "off",
+        "jsx-a11y/alt-text": [
+            2,
+            {
+                "elements": [
+                    "img",
+                    "object",
+                    "area",
+                    "input[type=\"image\"]"
+                ],
+                "img": [
+                    "Image"
+                ],
+                "object": [
+                    "Object"
+                ],
+                "area": [
+                    "Area"
+                ],
+                "input[type=\"image\"]": [
+                    "InputImage"
+                ]
+            }
+        ]
+    }
+}
