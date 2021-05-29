@@ -1,0 +1,18 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Arvo", "IBM Plex Sans", sans-serif;
+	font-size: 16px;
+}
+.font-arvo {
+	font-family: "Arvo", serif;
+}
+.font-ibm {
+	font-family: "IBM Plex Sans", sans-serif;
+}
+@import "./tailwind.css";
+@import "./src/styles/main.scss";
+a {
+	font-family: "IBM Plex Sans", sans-serif;
+}

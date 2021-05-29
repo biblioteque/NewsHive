@@ -9,6 +9,7 @@
 		"@types/node": "^14.14.22",
 		"@types/react": "^17.0.0",
 		"@types/react-dom": "^17.0.0",
+		"@types/react-router-dom": "^5.1.7",
 		"antd": "^4.10.3",
 		"autoprefixer": "^10.2.3",
 		"node-sass": "^4.14.1",
@@ -26,13 +27,8 @@
 		"start": "npm run build:css &&  react-scripts start",
 		"build": "react-scripts build",
 		"build:css": "postcss src/styles/tailwind.css -o .src/tailwind.css ",
-		"lint": "eslint ./src --fix",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
-	},
-	"resolutions": {
-		"@typescript-eslint/eslint-plugin": "^4.14.0",
-		"@typescript-eslint/parser": "^4.14.0"
 	},
 	"eslintConfig": {
 		"extends": [

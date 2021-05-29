@@ -1,0 +1,44 @@
+.home-layout-wrapper {
+	margin-top: 250px;
+	.info-card {
+		box-shadow: 4px 4px 27px -12px rgba(0, 0, 0, 0.43);
+		svg {
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+		p {
+			color: #8e8989;
+		}
+	}
+}
+
+// auth
+
+.backdrop {
+	background: linear-gradient(
+		45deg,
+		rgba(161, 5, 98, 1) 0%,
+		rgba(247, 13, 41, 0.7) 35%,
+		rgba(123, 6, 129, 0.6) 100%
+	);
+	svg {
+		position: absolute;
+		transform: translate(20%, -95%);
+		width: 70%;
+		height: 100%;
+		#mascara {
+			animation: moveWand 3s infinite linear;
+			transform: translateX(-40px);
+			backface-visibility: hidden;
+			transform: translateY(-5px);
+			transform-box: fill-box;
+		}
+	}
+}
+
+@keyframes moveWand {
+	100% {
+		transform: translateX(50px);
+		perspective: 1000px;
+	}
+}
